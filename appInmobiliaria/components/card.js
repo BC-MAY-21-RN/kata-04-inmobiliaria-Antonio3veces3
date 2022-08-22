@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { StyleSheet, Text, View, ImageBackground } from "react-native";
 import { Icon } from "@rneui/themed"; 
 
-const PropertyCard = () => {
+const PropertyCard = ({item}) => {
   const [color, setColor] = useState("#1B882F");
   const [like, setLike] = useState(true);
   const changeColor = ()=>{
@@ -15,39 +15,39 @@ const PropertyCard = () => {
   return (
     <View style={styles.container}>
       <View style={styles.imgView}>
-        <ImageBackground source={img} style={styles.img} imageStyle={{borderRadius: 10}}>
+        <ImageBackground source={{uri: item.img}} style={styles.img} imageStyle={{borderRadius: 10}}>
             <View style={styles.ratingView}>
                 <Icon style={styles.numberRating} name= "star" color={"#E9C234"} type="material-community"/>
-                <Text style={styles.numberRating}>4.7</Text>
+                <Text style={styles.numberRating}>{item.rating}</Text>
             </View>
         </ImageBackground>
       </View>
 
       <View style={styles.dataView}>
-            <Text style={styles.title}>The Willows</Text>
+            <Text style={styles.title}>{item.title}</Text>
 
             <View style={styles.addressView}>
             <Icon  name="map-marker" type="material-community"/>
             <Text style={styles.address}>
-            3517 W. Gray St. Utica</Text>
+            {item.address}</Text>
             </View>
             
             <View style={styles.viewDescription}>
             
             <Icon  name="bed-king-outline" type="material-community"/>
               <Text style={styles.description}>
-              3</Text>
+              {item.beds}</Text>
             
               <Icon  name="shower" type="material-community"/>
-            <Text style={styles.description}>2</Text>
+            <Text style={styles.description}>{item.bathroom}</Text>
             
             <Icon  name="aspect-ratio" type="material-community"/>
-            <Text style={styles.description}>230 ft^2</Text>
+            <Text style={styles.description}>{item.area}</Text>
 
             </View>
 
             <View style={styles.priceView}>
-            <Text style={styles.price}>$440/m</Text>
+            <Text style={styles.price}>${item.price}/m</Text>
             <Icon  name="heart-circle" type="material-community" size={40} style={styles.like} color={color} onPress={changeColor}/>
             </View>
             
@@ -59,9 +59,9 @@ const PropertyCard = () => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 50,
+    marginTop: 20,
     paddingHorizontal: 8,
-    width: "92%",
+    width: "100%",
     height: 180,
     alignItems: "center",
     flexDirection: "row",
@@ -117,7 +117,7 @@ img: {
     alignItems: 'center'
   },
   address: {
-    fontSize: 13,
+    fontSize: 11,
     alignItems: 'center',
     justifyContent: 'center',
     alignSelf: 'center'
@@ -141,7 +141,7 @@ img: {
   },
   like: {
     marginTop: 8,
-    marginLeft: 75,
+    marginLeft: '50%',
   }
 });
 

@@ -1,0 +1,104 @@
+{
+    "available": [
+        {
+            "title": "The Willows",
+            "address": "3517 W. Gray St. Utica",
+            "img": "https://s3-us-west-2.amazonaws.com/mktapts/images/modern/4051800/features/community.png",
+            "beds": 3,
+            "bathroom": 2,
+            "area": "230 ft^2",
+            "price": 440,
+            "rating": 4.7
+        },
+        {
+            "title": "The Game Room",
+            "address": "2012 Ever live St. Utica",
+            "img": "https://cdn.betson.com/wp-content/uploads/2019/04/Game-Room-1024x794.jpg",
+            "beds": 2,
+            "bathroom": 1,
+            "area": "110 ft^2",
+            "price": 300,
+            "rating": 4.5
+        },
+        {
+            "title": "The Hill house",
+            "address": "135 St. garzas, Aves, Colima",
+            "img": "https://images.adsttc.com/media/images/53c2/f680/c07a/80aa/8900/0071/large_jpg/Arkhefield_HuntersHillHouse_AngusMartin_03.jpg?1405285998",
+            "beds": 4,
+            "bathroom": 2,
+            "area": "300 ft^2",
+            "price": 500,
+            "rating": 5.0
+        },
+        {
+            "title": "The Party place",
+            "address": "35 St. gaviota,Aves, Colima",
+            "img": "https://jardinazul.com.mx/wp-content/uploads/2017/11/IMG-20170603-WA0032.jpg",
+            "beds": 3,
+            "bathroom": 5,
+            "area": "250 ft^2",
+            "price": 450,
+            "rating": 3.0
+        },
+        {
+            "title": "The study home",
+            "address": "12 St. everest, Montain, Colima",
+            "img": "https://i.pinimg.com/originals/67/8c/37/678c37686c01d007ffb058ca42be1603.jpg",
+            "beds": 2,
+            "bathroom": 1,
+            "area": "150 ft^2",
+            "price": 200,
+            "rating": 3.5
+        },
+        {
+            "title": "The smart house",
+            "address": "90 St. volcan, Montain, Colima, Col",
+            "img": "http://blog.latrivenetacavi.com/wp-content/uploads/2018/09/smart-house-trasformare.jpg",
+            "beds": 2,
+            "bathroom": 1,
+            "area": "150 ft^2",
+            "price": 200,
+            "rating": 3.5
+        },
+        {
+            "title": "House for students",
+            "address": "360 St. jardin, Flores, Colima",
+            "img": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/cd/41/df/international-students.jpg",
+            "beds": 4,
+            "bathroom": 3,
+            "area": "300 ft^2",
+            "price": 450,
+            "rating": 4.2
+        },
+        {
+            "title": "The dark room",
+            "address": "650 St. parque, Flores, Colima",
+            "img": "https://i.pinimg.com/originals/d9/f6/d9/d9f6d9602d39d8bb8d77e15466950d32.jpg",
+            "beds": 2,
+            "bathroom": 1,
+            "area": "300 ft^2",
+            "price": 350,
+            "rating": 4.6
+        },
+        {
+            "title": "rooms with wifi",
+            "address": "320 St. dalia, Flores, Manzanillo",
+            "img": "https://i1.wp.com/www.oinkoink.com.mx/wp-content/uploads/2022/02/rentas-de-5-mil-pesos-en-la-cdmx-en-estas-cinco-colonias-es-posible-2.jpg?resize=1280%2C720&ssl=1",
+            "beds": 6,
+            "bathroom": 3,
+            "area": "700 ft^2",
+            "price": 600,
+            "rating": 4.8
+        },
+        {
+            "title": "Doctor's rooms",
+            "address": "130 St. girasol, Flores, Manzanillo",
+            "img": "https://assets.easybroker.com/property_images/1807950/27516630/EB-FX7950.jpeg?version=1602720002",
+            "beds": 4,
+            "bathroom": 2,
+            "area": "350 ft^2",
+            "price": 350,
+            "rating": 5.0
+        }
+    ]
+}
