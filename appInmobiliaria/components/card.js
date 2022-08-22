@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, ImageBackground } from "react-native";
+import { StyleSheet, Text, View, ImageBackground, TouchableOpacity } from "react-native";
 import { Icon } from "@rneui/themed"; 
 
 const PropertyCard = ({item}) => {
@@ -9,11 +9,8 @@ const PropertyCard = ({item}) => {
     setLike(!like);
     (like)? setColor("#1B882F") : setColor("#AC2C0C")
   }
-  const img = {
-    uri: "https://assets.easybroker.com/property_images/1016795/15346981/EB-CW6795.jpg?version=1555173574",
-  };
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container}>
       <View style={styles.imgView}>
         <ImageBackground source={{uri: item.img}} style={styles.img} imageStyle={{borderRadius: 10}}>
             <View style={styles.ratingView}>
@@ -53,7 +50,7 @@ const PropertyCard = ({item}) => {
             
             
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -111,6 +108,7 @@ img: {
     fontWeight: 'bold'
   },
   addressView: {
+    width: '90%',
     marginTop: 12,
     flexDirection: 'row',
     alignItems: 'center',
