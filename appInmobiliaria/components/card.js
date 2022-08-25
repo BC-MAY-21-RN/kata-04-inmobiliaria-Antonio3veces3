@@ -45,7 +45,9 @@ const PropertyCard = ({item}) => {
 
             <View style={styles.priceView}>
             <Text style={styles.price}>${item.price}/m</Text>
-            <Icon  name="heart-circle" type="material-community" size={40} style={styles.like} color={color} onPress={changeColor}/>
+            <TouchableOpacity style={styles.like} onPress={changeColor}>
+              <Icon  name="heart-circle" type="material-community" size={45}  color={color}/>
+            </TouchableOpacity>
             </View>
             
             
@@ -96,7 +98,6 @@ img: {
     marginRight: 2
   },
   viewDescription: {
-    marginTop: 8,
     height: 35,
     flexDirection: 'row',
     justifyContent: 'space-around',
@@ -115,7 +116,7 @@ img: {
     alignItems: 'center'
   },
   address: {
-    fontSize: 11,
+    fontSize: 12,
     alignItems: 'center',
     justifyContent: 'center',
     alignSelf: 'center'
@@ -130,7 +131,7 @@ img: {
   },
   price: {
     fontSize: 18,
-    marginTop: 14,
+    marginTop: 9,
     fontWeight: 'bold',
   },
   priceView: {
@@ -138,8 +139,10 @@ img: {
     flexDirection: 'row'
   },
   like: {
-    marginTop: 8,
-    marginLeft: '50%',
+    marginTop: 5,
+    height: '90%',
+    width: '25%',
+    marginLeft: '40%',
   }
 });
 

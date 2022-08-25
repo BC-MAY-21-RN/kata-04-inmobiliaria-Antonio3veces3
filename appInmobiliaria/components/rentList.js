@@ -22,15 +22,13 @@ const AvailableList = () => {
   };
 
   return (
-    <ScrollView style={styles.scrollView}>
       <FlatList
         data={data.available}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
         extraData={selectedId}
-        style={styles.flatList}
+        style={styles.scrollView}
       />
-    </ScrollView>
   );
 };
 
@@ -39,6 +37,7 @@ const styles = StyleSheet.create({
     height: '100%',
     paddingHorizontal: 12,
     backgroundColor: "#F5F5F5",
+    borderRadius: 20
   },
   flatList:{
     height: '90%',
